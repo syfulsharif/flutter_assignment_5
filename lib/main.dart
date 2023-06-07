@@ -58,6 +58,7 @@ class _OstadBottomNavigationBarState extends State<OstadBottomNavigationBar> {
         backgroundColor: Colors.teal,
       ),
       drawer: Drawer(
+        backgroundColor: Colors.teal.shade100,
         child: ListView(
           children: const [
             DrawerHeader(
@@ -79,17 +80,18 @@ class _OstadBottomNavigationBarState extends State<OstadBottomNavigationBar> {
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.teal.shade300,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(Icons.home, color: Colors.white,),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.design_services),
+            icon: Icon(Icons.design_services, color: Colors.white),
             label: 'Services',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.contact_page),
+            icon: Icon(Icons.contact_page, color: Colors.white,),
             label: 'Contact',
           ),
         ],
